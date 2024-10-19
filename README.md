@@ -1,6 +1,6 @@
-# ✨ GlamHub ✨
+# ✨ BeautyZone ✨
 
-Welcome to GlamHub, an app that blends beauty, fashion, and technology! 💅🛍️ Built with a React Native frontend and powered by a Ballerina backend, this project is designed to deliver a seamless experience for users. Let's get you up and running!
+Welcome to  BeautyZone, an app that blends beauty, fashion, and technology! 💅🛍️ Built with a React Native frontend and powered by a Ballerina backend, this project is designed to deliver a seamless experience for users. Let's get you up and running!
 
 ## 🚀 Getting Started
 
