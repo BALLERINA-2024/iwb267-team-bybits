@@ -8,9 +8,7 @@ const Landing = () => {
       <View style={styles.circleBackground}>
         <View style={styles.circleImage}>
           <Image
-            source={{
-              uri: "https://cdn.dribbble.com/users/5534/screenshots/14230133/profile_4x.jpg",
-            }}
+            source={require("@/assets/images/L_1.png")}
             style={styles.image}
           />
         </View>

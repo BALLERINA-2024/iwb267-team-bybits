@@ -8,12 +8,7 @@ const Landing_2 = () => {
       <Text style={styles.header}>Welcome to Glamhub</Text>
 
       <View style={styles.circleImage}>
-        <Image
-          source={{
-            uri: "https://cdn.dribbble.com/users/5534/screenshots/14230133/profile_4x.jpg",
-          }}
-          style={styles.img}
-        />
+        <Image source={require("@/assets/images/L_2.png")} style={styles.img} />
       </View>
 
       <Text style={styles.description}>Choose your path</Text>

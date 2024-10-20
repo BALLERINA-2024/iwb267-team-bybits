@@ -80,7 +80,7 @@ const CreatePostScreen = () => {
       {/* Profile Header */}
       <View style={styles.header}>
         <Image
-          source={{ uri: "https://example.com/profile-pic.png" }}
+          source={require("@/assets/images/L_1.png")}
           style={styles.profileImage}
         />
         <View>
@@ -91,7 +91,10 @@ const CreatePostScreen = () => {
 
       {/* Description Input */}
       <TextInput
-        style={styles.descriptionInput}
+        style={[
+          styles.descriptionInput, // External style from the stylesheet
+          { textAlign: "center" }, // Inline style for centering text
+        ]}
         placeholder="Type your description..."
         placeholderTextColor="#b8a5ab"
         value={description}
@@ -156,6 +159,7 @@ const styles = StyleSheet.create({
   },
   descriptionInput: {
     height: 180,
+
     borderColor: "#d09cac", // Light pink border color
     borderWidth: 1,
     marginBottom: 10,

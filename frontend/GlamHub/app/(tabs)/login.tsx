@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "expo-router";
+import { Link, router, useRouter } from "expo-router";
 import {
   View,
   Text,
@@ -29,7 +29,8 @@ const LoginScreen = () => {
       const result = await response.text();
 
       if (response.ok) {
-        Alert.alert("Success", result);
+        // Alert.alert("Success", result);
+        router.push("/home");
       } else {
         Alert.alert("Error", result);
       }
@@ -46,7 +47,7 @@ const LoginScreen = () => {
 
         <TextInput
           style={styles.input}
-          placeholder="email"
+          placeholder="user name"
           value={email}
           onChangeText={setEmail}
           //keyboardType="email-address"
@@ -71,15 +72,9 @@ const LoginScreen = () => {
         <View style={styles.footer}>
           <Text>Don’t have an account? </Text>
 
-          {/* <TouchableOpacity>
-            <Link href="/signup">
-              <Text style={styles.signupText}>Signup</Text>
-            </Link>
-          </TouchableOpacity> */}
-
           <TouchableOpacity>
-            <Link href="/homescreen">
-              <Text style={styles.signupText}>Home</Text>
+            <Link href="/signup">
+              <Text style={styles.signupText}>Signup </Text>
             </Link>
           </TouchableOpacity>
         </View>
